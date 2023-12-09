@@ -1,0 +1,71 @@
+@import "colors";
+
+.login-box {
+    // border: 2px solid blue;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        text-transform: uppercase;
+        color: $reddark;
+    }
+
+    .box {
+        // border: 2px solid red;
+        padding: 1rem;
+        width: 75%;
+
+        > input {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.5);
+        }
+
+        > div {
+            // border: 2px solid green;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 0 25px;
+
+            .check {
+                // border: 2px solid purple;
+                display: flex;
+                align-items: center;
+                height: 40px;
+
+                span {
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.5); 
+                    // border: 2px solid orange; 
+                }
+            }
+        }
+        .login-button {
+            height: 40px;
+            width: 100%;
+            margin: 15px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            background: $red;
+            color: white;
+
+            &:hover {
+                background-color: $reddark;
+            }
+        }
+    }
+
+    a {
+        font-size: 15px;
+    }
+    // $red: rgb(156, 0, 60);
+    // $reddark: rgb(126, 0, 48);
+
+}
