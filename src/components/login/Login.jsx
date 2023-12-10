@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 function Login() {
 
@@ -7,13 +7,30 @@ function Login() {
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
 
-    const handleClick = () => {
+    const navigate = useNavigate();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+
+        // Error message if no email or password is provided 
         if(!email || !password) {
-           return setErrorMessage("Please provide both an email and a password.")
-        } else alert('It works')
+            setErrorMessage("Please provide both an email and a password.")
+            return;
+        }
+
+        // Check if the email follows a valid format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
 
         setErrorMessage("")
+
+    // Handle navigation
+        navigate("/")
     }
+
     return (
     <>
         <section className="login-box">
