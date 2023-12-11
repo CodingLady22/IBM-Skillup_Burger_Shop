@@ -28,6 +28,16 @@
         margin-top: 2rem;
         float: right;
       }
+      
+      .menu {
+        background-color: $red;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 2rem;
+        float: left;
+      }
     }
   }
 }
