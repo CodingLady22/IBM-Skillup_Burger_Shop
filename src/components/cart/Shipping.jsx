@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Popup from 'reactjs-popup';
 import countries from "../../countriesData"
 
@@ -100,6 +101,7 @@ const Shipping = () => {
                 <div style={{color:"red",position: 'absolute', top: '50%', right: '100%', transform: 'translateY(-50%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Order Placed</div>
                
             </Popup>
+              <Link className="order-link" to={"/myOrders"}>My Orders</Link>
         </form>
       </main>
     </section>
