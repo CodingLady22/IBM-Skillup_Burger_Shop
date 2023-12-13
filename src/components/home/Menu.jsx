@@ -1,4 +1,4 @@
-// Write all the code here
+import { Link } from "react-router-dom";
 import "../../styles/menu.scss"
 import MenuCard from "./MenuCard"
 import menuData from "../../menuData"
@@ -19,6 +19,7 @@ function Menu() {
                     />
                 )) }
             </div>
+            <Link className="ship-link" to={"/cart"}>View Orders</Link>
         </div>
     </>
   )
