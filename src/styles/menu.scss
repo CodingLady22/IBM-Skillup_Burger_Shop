@@ -15,6 +15,18 @@
   > div {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 30px;
+  }
+  .ship-link {
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    background: rgb(145, 22, 22);
+  }
+  .ship-link:hover {
+    background: rgb(196, 9, 9);
   }
 }
 

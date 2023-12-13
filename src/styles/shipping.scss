@@ -43,7 +43,19 @@
           font-size: 1rem;
         }
       }
-      
+      .order-link {
+        border: 2px solid  rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+        padding: 5px;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        background: rgb(216, 209, 209);
+      }
+      .order-link:hover {
+        color: white;
+        background: rgb(102, 91, 91);
+      }
     }
   }
 }
