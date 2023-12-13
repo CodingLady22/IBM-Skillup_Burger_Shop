@@ -8,8 +8,10 @@ function DropdownMenu() {
   useEffect(() => {
     const navs = [
       { name: "Login", path: "/login" },
+      {name:"About", path:"/about"},
       {name:"Orders", path:"/myorders"},
-      {name:"Logout", path:"/login"}
+      {name:"Contact", path:"/contact"},
+      {name:"Logout", path:"/logout"},
       
     ];
     setNavLinks(navs);
@@ -37,11 +39,11 @@ function DropdownMenu() {
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               {navLinks.map((d, i) => (
-                <li key={i}>
+                <li className="test" key={i}>
                   <Link to={d.path}>
-                    <button class="dropdown-item" type="button">
+                    <div class="dropdown-item">
                       {d.name}
-                    </button>
+                    </div>
                   </Link>
                 </li>
               ))}
